@@ -1,0 +1,61 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "version": "1.0.0",
+  "manifestVersion": "1.17",
+  "id": "f9ebc400-0004-433e-b7de-349cd8ba6d6e",
+  "name": {
+    "short": "MyCustomBot01",
+    "full": ""
+  },
+  "developer": {
+    "name": "Northbay",
+    "mpnId": "",
+    "websiteUrl": "https://northbaysolutions.com/",
+    "privacyUrl": "https://northbaysolutions.com/about",
+    "termsOfUseUrl": "https://northbaysolutions.com/contact"
+  },
+  "description": {
+    "short": "POC Bot",
+    "full": "This is a test custom bot hosted in different Azure account with SSO enabled."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "c7b0f05b-601d-472f-852b-70662518995d",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "isNotificationOnly": false,
+      "supportsCalling": false,
+      "supportsVideo": false,
+      "supportsFiles": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "token.botframework.com",
+    "*.*.amazonaws.com"
+  ],
+  "webApplicationInfo": {
+    "id": "c7b0f05b-601d-472f-852b-70662518995d",
+    "resource": "api://botid-c7b0f05b-601d-472f-852b-70662518995d"
+  },
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "TeamsActivity.Send.User",
+          "type": "Application"
+        }
+      ]
+    }
+  }
+}
